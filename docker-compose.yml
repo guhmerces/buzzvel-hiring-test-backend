@@ -4,6 +4,9 @@ services:
     # image project
     app:
         build:
+            args:
+                user: buzzvel
+                uid: 1000
             context: .
             dockerfile: Dockerfile
         image: laravel-app
