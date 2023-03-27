@@ -6,6 +6,7 @@ use Tests\TestCase;
 use Faker\Factory as Faker;
 use Illuminate\Support\Str;
 
+use function PHPUnit\Framework\assertEquals;
 use function PHPUnit\Framework\assertNotNull;
 
 class GetBusinessQRCodeTest extends TestCase
