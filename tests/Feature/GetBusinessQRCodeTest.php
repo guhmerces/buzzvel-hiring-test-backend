@@ -37,9 +37,9 @@ class GetBusinessQRCodeTest extends TestCase
         
         // Assertions about the returned json
         $responseData = $response->decodeResponseJson();
-        assert($responseData['owner_name'], $requestParams['owner_name']);
-        assert($responseData['github_url'], $requestParams['github_url']);
-        assert($responseData['linkedin_url'], $requestParams['linkedin_url']);
+        assertEquals($responseData['owner_name'], $requestParams['owner_name']);
+        assertEquals($responseData['github_url'], $requestParams['github_url']);
+        assertEquals($responseData['linkedin_url'], $requestParams['linkedin_url']);
         assertNotNull($responseData['qrcode_path']);
         assertNotNull($responseData['qrcode_url']);
     }
