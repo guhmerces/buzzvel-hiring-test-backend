@@ -30,7 +30,7 @@ class GetBusinessQRCodeTest extends TestCase
 
         // Get the entity that were just created, by business owner name
         $owner_name = $requestParams['owner_name'];
-        $response = $this->json('GET', "/api/{$owner_name}", $requestParams);
+        $response = $this->json('GET', "/api/{$owner_name}");
         
         //Assert HTTP Status is "200 OK"
         $response->assertStatus(200);
