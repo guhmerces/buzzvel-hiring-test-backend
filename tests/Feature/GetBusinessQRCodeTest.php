@@ -6,6 +6,7 @@ use Tests\TestCase;
 use Faker\Factory as Faker;
 use Illuminate\Support\Str;
 
+use function PHPUnit\Framework\assertEquals;
 use function PHPUnit\Framework\assertNotNull;
 
 class GetBusinessQRCodeTest extends TestCase
@@ -30,17 +31,29 @@ class GetBusinessQRCodeTest extends TestCase
 
         // Get the entity that were just created, by business owner name
         $owner_name = $requestParams['owner_name'];
-        $response = $this->json('GET', "/api/{$owner_name}", $requestParams);
+        $response = $this->json('GET', "/api/{$owner_name}");
         
         //Assert HTTP Status is "200 OK"
         $response->assertStatus(200);
         
         // Assertions about the returned json
         $responseData = $response->decodeResponseJson();
-        assert($responseData['owner_name'], $requestParams['owner_name']);
-        assert($responseData['github_url'], $requestParams['github_url']);
-        assert($responseData['linkedin_url'], $requestParams['linkedin_url']);
+        assertEquals($responseData['owner_name'], $requestParams['owner_name']);
+        assertEquals($responseData['github_url'], $requestParams['github_url']);
+        assertEquals($responseData['linkedin_url'], $requestParams['linkedin_url']);
         assertNotNull($responseData['qrcode_path']);
         assertNotNull($responseData['qrcode_url']);
+    }
+
+    public function test_if_accessing_a_unregistered_name_returns_http_404_not_found()
+    {
+        // Simulates a unregistered owner name
+        $owner_name = Str::random(10);
+
+        // Get
+        $response = $this->json('GET', "/api/{$owner_name}");
+        
+        //Assert HTTP Status is "404 Not Found"
+        $response->assertStatus(404);
     }
 }
