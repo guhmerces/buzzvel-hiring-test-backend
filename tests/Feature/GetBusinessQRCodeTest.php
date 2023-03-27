@@ -43,4 +43,16 @@ class GetBusinessQRCodeTest extends TestCase
         assertNotNull($responseData['qrcode_path']);
         assertNotNull($responseData['qrcode_url']);
     }
+
+    public function test_if_accessing_a_unregistered_name_returns_http_404_not_found()
+    {
+        // Simulates a unregistered owner name
+        $owner_name = Str::random(10);
+
+        // Get
+        $response = $this->json('GET', "/api/{$owner_name}");
+        
+        //Assert HTTP Status is "404 Not Found"
+        $response->assertStatus(404);
+    }
 }
