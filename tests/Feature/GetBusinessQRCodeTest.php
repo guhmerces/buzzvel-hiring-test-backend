@@ -13,7 +13,7 @@ class GetBusinessQRCodeTest extends TestCase
     /**
      * A basic test example.
      */
-    public function test_the_application_returns_a_successful_response(): void
+    public function test_if_can_access_a_newly_created_qrcode(): void
     {
         $faker = Faker::create('pt_PT');
 
