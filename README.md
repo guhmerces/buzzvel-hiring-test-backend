@@ -1,7 +1,14 @@
 
 # John Virtual Card - Buzzvel 2023 Dev Team Test
 
-# This is a API to work as the backend of the "QR Code Image Generator"
+Hi! I'm [Gustavo](https://github.com/guhmerces) and this repository contains my implementation for the backend technical challenge proposed by Buzzvel.
+
+## Setup
+
+This project comes with a docker-compose.yml and a Dockerfile ready, in order to help you setup a development environment very quickly.
+
+First follow the instructions to install Docker and Docker Compose on your operational system, you can find official documentation on the [Docker Website](https://docs.docker.com).
+
 
 Clone the repository
 ```sh
