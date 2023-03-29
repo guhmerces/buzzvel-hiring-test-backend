@@ -1,5 +1,7 @@
 
-# John Virtual Card - Buzzvel 2023 Dev Team Test
+# John Virtual Card - Buzzvel 2023 Dev Team Test - Backend
+
+<b>** To access the frontend repository for this same technical challenge, click [here](https://github.com/guhmerces/buzzvel-hiring-test-frontend)</b>
 
 Hi! I'm [Gustavo](https://github.com/guhmerces) and this repository contains my implementation for the backend technical challenge proposed by Buzzvel.
 
