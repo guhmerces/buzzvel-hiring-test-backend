@@ -15,7 +15,7 @@ class BusinessQRCodeController extends Controller
     {
         $validatedData = $request->validated();
 
-        $dataqr = config('app.url') . "/" . $validatedData['owner_name'];
+        $dataqr = config('app.qrcode_base_url') . "/" . $validatedData['owner_name'];
         $fileName = Str::random() . ".png";
 
         $qrCodeHelper->saveQRCodeFile($fileName, $dataqr);
