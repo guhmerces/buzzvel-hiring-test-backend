@@ -28,7 +28,7 @@ Set environment variables in .env
 ```dosini
 APP_NAME="QR Code Image Generator"
 APP_URL=http://localhost:8989
-QRCODE_BASE_URL=http://localhost:3000
+QRCODE_BASE_URL=http://localhost:3000 # Put here the base URL which you'd like to generate the qrcode with
 
 DB_CONNECTION=mysql
 DB_HOST=db
