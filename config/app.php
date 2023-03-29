@@ -55,6 +55,8 @@ return [
     */
 
     'url' => env('APP_URL', 'http://localhost'),
+    
+    'qrcode_base_url' => env('QRCODE_BASE_URL'),
 
     'asset_url' => env('ASSET_URL'),
 
