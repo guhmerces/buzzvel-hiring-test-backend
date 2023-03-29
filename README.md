@@ -63,5 +63,5 @@ php artisan key:generate
 ```
 
 
-Acessar o projeto
+Access the program
 [http://localhost:8989](http://localhost:8989)
