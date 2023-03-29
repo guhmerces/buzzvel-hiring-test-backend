@@ -31,7 +31,7 @@ APP_URL=http://localhost:8989
 QRCODE_BASE_URL=http://localhost:3000 # Put here the base URL which you'd like to generate the qrcode with
 
 DB_CONNECTION=mysql
-DB_HOST=db
+DB_HOST=db # according to docker-compose.yml
 DB_PORT=3306
 DB_DATABASE=laravel
 DB_USERNAME=root
