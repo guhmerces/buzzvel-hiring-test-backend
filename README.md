@@ -144,7 +144,7 @@ X-RateLimit-Remaining: 57
     "linkedin_url": "https://www.example.com",
     "owner_name": "John Doe",
     "qrcode_path": "ODQ8JOOyj95Wl1mH.png",
-    "qrcode_url": "http://localhost:8000/storage/ODQ8JOOyj95Wl1mH.png",
+    "qrcode_url": "http://localhost:8989/storage/ODQ8JOOyj95Wl1mH.png",
     "updated_at": "2023-03-29T04:39:30.000000Z"
 }
 
