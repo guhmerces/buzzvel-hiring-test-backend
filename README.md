@@ -79,7 +79,7 @@ Acessar o projeto
 
 ### Creating an Business Card
 
-The first operation you will most likely do is the create a Bank Account. This can be done in a post request without any authorization headers.
+The first operation you will most likely do is the create a Business QR code Card. This can be done in a post request without any authorization headers.
 
 ```
 POST /api/business-qrcode HTTP/1.1
