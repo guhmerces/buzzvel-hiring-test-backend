@@ -77,8 +77,6 @@ Acessar o projeto
 
 ## Using the API
 
-For this example we are going to use the base URI of the public deployment: ***https://forceful-royal-fulmar.gigalixirapp.com***.
-
 ### Creating an Business Card
 
 The first operation you will most likely do is the create a Bank Account. This can be done in a post request without any authorization headers.
